@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="herblore.gui.GUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="520" height="298"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="8404" binding="potionPanel" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="5df33" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="35" height="19"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Potion"/>
+            </properties>
+          </component>
+          <component id="b6cfe" class="javax.swing.JFormattedTextField" binding="potionAmountField" custom-create="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="true"/>
+              <enabled value="false"/>
+              <focusable value="true"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="a724e" class="javax.swing.JComboBox" binding="potionComboBox">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="true"/>
+              <model>
+                <item value="Attack"/>
+                <item value="Anti-Poison"/>
+                <item value="Strength"/>
+                <item value="Stat Restore"/>
+                <item value="Energy"/>
+                <item value="Defence"/>
+                <item value="Combat"/>
+                <item value="Prayer"/>
+                <item value="Super Attack"/>
+                <item value="Super Anti-poison"/>
+                <item value="Super Energy"/>
+                <item value="Super Strength"/>
+                <item value="Super Restore"/>
+                <item value="Super Defence"/>
+                <item value="Antifire"/>
+                <item value="Ranging"/>
+                <item value="Magic"/>
+                <item value="Stamina"/>
+                <item value="Antidote++"/>
+                <item value="Saradomin Brew"/>
+                <item value="Recover Special"/>
+                <item value="Super Antifire"/>
+                <item value="Super Combat"/>
+                <item value="Extreme Attack"/>
+                <item value="Extreme Strength"/>
+                <item value="Extreme Defence"/>
+                <item value="Extreme Ranging"/>
+                <item value="Extreme Magic"/>
+                <item value="Prayer Renewal"/>
+                <item value="Overload"/>
+              </model>
+            </properties>
+          </component>
+          <component id="f5af4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Amount"/>
+            </properties>
+          </component>
+          <component id="c2663" class="javax.swing.JButton" binding="addTaskButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add Task"/>
+            </properties>
+          </component>
+          <component id="da876" class="javax.swing.JCheckBox" binding="makeAllCheckBox" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="Make all"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="f7717" binding="selectedPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="0" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d1eed" class="javax.swing.JButton" binding="removeTaskButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <text value="Remove Task"/>
+            </properties>
+          </component>
+          <scrollpane id="2a5a3">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="5e9" class="javax.swing.JList" binding="selectedList">
+                <constraints/>
+                <properties>
+                  <enabled value="true"/>
+                  <model/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="de78a" binding="startPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="bd04" class="javax.swing.JButton" binding="startButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <text value="Start"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
