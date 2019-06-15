@@ -299,6 +299,11 @@ public class GUI implements PropertyChangeListener, ListSelectionListener
 				ids.add(269);
 				break;
 
+			case "Prayer Renewal":
+				ids.add(21628);
+				ids.add(21622);
+				break;
+
 			case "Extreme Attack":
 				ids.add(145);
 				ids.add(261);
@@ -322,11 +327,6 @@ public class GUI implements PropertyChangeListener, ListSelectionListener
 			case "Extreme Magic":
 				ids.add(3042);
 				ids.add(9594);
-				break;
-
-			case "Prayer Renewal":
-				ids.add(21628);
-				ids.add(21622);
 				break;
 
 			case "Overload":

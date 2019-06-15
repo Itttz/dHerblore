@@ -69,12 +69,12 @@
                 <item value="Recover Special"/>
                 <item value="Super Antifire"/>
                 <item value="Super Combat"/>
+                <item value="Prayer Renewal"/>
                 <item value="Extreme Attack"/>
                 <item value="Extreme Strength"/>
                 <item value="Extreme Defence"/>
                 <item value="Extreme Ranging"/>
                 <item value="Extreme Magic"/>
-                <item value="Prayer Renewal"/>
                 <item value="Overload"/>
               </model>
             </properties>
